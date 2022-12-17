@@ -1,0 +1,530 @@
+.navbar {
+    z-index: 99;
+    width: 100%;
+    position: absolute;
+}
+
+.navbar .container-fluid {
+    width: 95%;
+}
+
+.navbar-brand {
+    font-weight: 800;
+}
+
+.nav-link {
+    color: white;
+    margin-right: 20px;
+}
+
+a.nav-link[aria-current] {
+    position: relative;
+}
+
+a.nav-link[aria-current]::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 90%;
+    height: 2px;
+    right: 0;
+    bottom: 5px;
+    transform: translate(-5%);
+}
+
+.home {
+    position: relative;
+    background-image: url(../image/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.559);
+}
+
+.allText .text h3 {
+    font-size: 50px;
+}
+
+.allText .text h1::after {
+    content: "|";
+    animation: iam 18s infinite alternate;
+}
+
+.allText .text .icon div {
+    background-color: rgba(0, 0, 0, 0.442);
+    border: none;
+    width: 35px;
+    height: 35px;
+}
+
+@keyframes iam {
+    0% {
+        content: "|";
+    }
+    .75% {
+        content: "D|";
+    }
+    1.5% {
+        content: "De|";
+    }
+    2.25% {
+        content: "Dev|";
+    }
+    3% {
+        content: "Deve|";
+    }
+    3.75% {
+        content: "Devel|";
+    }
+    4.5% {
+        content: "Develo|";
+    }
+    5.25% {
+        content: "Develop|";
+    }
+    6% {
+        content: "Develope|";
+    }
+    6.75% {
+        content: "Developer| ";
+    }
+    7.5% {
+        content: "Developer  ";
+    }
+    8.25% {
+        content: "Developer |";
+    }
+    9% {
+        content: "Developer  ";
+    }
+    9.75% {
+        content: "Developer|";
+    }
+    10.5% {
+        content: "Develope|";
+    }
+    11.5% {
+        content: "Develop|";
+    }
+    12.5% {
+        content: "Develo|";
+    }
+    13.25% {
+        content: "Devel|";
+    }
+    14% {
+        content: "Deve|";
+    }
+    14.75% {
+        content: "Dev|";
+    }
+    15.5% {
+        content: "De|";
+    }
+    16.25% {
+        content: "D|";
+    }
+    17% {
+        content: "|";
+    }
+    17.75% {
+        content: " ";
+    }
+    18.5% {
+        content: "|";
+    }
+    19.25% {
+        content: "";
+    }
+    20% {
+        content: "|";
+    }
+    20.75% {
+        content: "D|";
+    }
+    21.5% {
+        content: "De|";
+    }
+    22.25% {
+        content: "Des|";
+    }
+    23% {
+        content: "Desi|";
+    }
+    23.75% {
+        content: "Desig|";
+    }
+    24.5% {
+        content: "Design|";
+    }
+    25.25% {
+        content: "Designe|";
+    }
+    26% {
+        content: "Designer|";
+    }
+    26.75% {
+        content: "Designer |";
+    }
+    27.5% {
+        content: "Designer  ";
+    }
+    28.25% {
+        content: "Designer |";
+    }
+    29% {
+        content: "Designer  ";
+    }
+    29.75% {
+        content: "Designer |";
+    }
+    30.5% {
+        content: "Designer|";
+    }
+    31.25% {
+        content: "Designe|";
+    }
+    32% {
+        content: "Design|";
+    }
+    32.75% {
+        content: "Desig|";
+    }
+    33.5% {
+        content: "Desi|";
+    }
+    34.25% {
+        content: "Des|";
+    }
+    35% {
+        content: "De|";
+    }
+    35.75% {
+        content: "D|";
+    }
+    36.5% {
+        content: "|";
+    }
+}
+
+.col-md-5 {
+    width: 40%;
+    padding: 0px 20px;
+}
+
+.col-md-5::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 75%;
+    background-image: url(../image/dots.png);
+    background-repeat: repeat;
+    bottom: 60px;
+    left: -2%;
+    z-index: -1;
+}
+
+.jerry {
+    color: gray;
+    font-weight: bold;
+}
+
+.col-md-7 h3 {
+    margin-bottom: 10px;
+}
+
+.col-md-7 .progress {
+    margin-bottom: 25px;
+    height: 20px;
+}
+
+.col-md-7 .progress .w95::before {
+    content: "Web Design";
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    left: 0;
+    top: 0;
+    transform: translate(20%, -7%);
+}
+
+.col-md-7 .progress .w95::after {
+    content: "95%";
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    right: 0;
+    top: 0;
+    transform: translate(-20%, -7%);
+}
+
+.col-md-7 .progress .b80::before {
+    content: "Branding";
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    left: 0;
+    top: 0;
+    transform: translate(20%, -7%);
+}
+
+.col-md-7 .progress .b80::after {
+    content: "80%";
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    right: 0;
+    top: 0;
+    transform: translate(-20%, -7%);
+}
+
+.col-md-7 .progress .d90::before {
+    content: "Development";
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    left: 0;
+    top: 0;
+    transform: translate(20%, -7%);
+}
+
+.col-md-7 .progress .d90::after {
+    content: "90%";
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    right: 0;
+    top: 0;
+    transform: translate(-20%, -7%);
+}
+
+.btn-white,
+.btn-dark {
+    transition: all 0.5s;
+}
+
+.btn-white:hover {
+    background-color: #212529;
+    color: white;
+}
+
+.services,
+.testimonials,
+.ourBlog {
+    background-color: #f7f7f7;
+}
+
+@media (min-width: 992px) {
+    .services .card {
+        width: calc(90% / 3) !important;
+    }
+}
+
+
+/*  */
+
+.btn-dark:hover {
+    background-color: white;
+    color: black;
+}
+
+.card-img-top {
+    background-color: rgb(193, 193, 193);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: relative;
+    margin: 25px auto;
+    transition: all 0.5s;
+}
+
+.card:hover .card-img-top {
+    background-color: black;
+}
+
+.card-img-top .fa {
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+
+.card:hover .card-img-top .fa {
+    color: white;
+}
+
+.hed {
+    z-index: 3;
+}
+
+.hed::after {
+    content: "";
+    position: absolute;
+    background-image: url(../image/dots.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    top: 40%;
+    z-index: -1;
+}
+
+.overlay {
+    top: 5px;
+    bottom: 5px;
+    right: 30px;
+    left: 30px;
+    background: white;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.img:hover .overlay {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.567);
+}
+
+.icon div {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    margin: auto 5px;
+    transition: all 0.5s;
+}
+
+.icon div a {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon div a i {
+    color: white;
+    transition: all 0.5s;
+}
+
+.icon div:hover {
+    background-color: white;
+    border: 0.5px solid black;
+}
+
+.icon div:hover i {
+    color: black;
+}
+
+.carousel {
+    margin: auto auto 100px auto;
+}
+
+.carousel-indicators {
+    bottom: -75px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(186, 186, 186);
+    margin: auto 10px;
+}
+
+.about-item img {
+    transform: translateY(-15%);
+}
+
+.text-card .img {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.text-card img {
+    width: 100%;
+    height: auto;
+    transition: all 0.5s;
+}
+
+.text-card .img:hover img {
+    transform: scale(1.25);
+}
+
+.text .read::after {
+    content: "";
+    position: absolute;
+    background-color: #212529;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -1px;
+}
+
+.contact .icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 10px auto;
+    transition: all 0.5s;
+}
+
+.contact .icon i {
+    position: absolute;
+    font-size: 25px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+}
+
+.contact .icon:hover {
+    background-color: black;
+}
+
+.contact .icon:hover i {
+    color: white;
+}
+
+.formSection .nameEmail {
+    width: 48%;
+}
+
+.formSection .nameEmail,
+.formSection .textarea {
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.formSection .nameEmail,
+.formSection .textarea,
+.formSection .submit {
+    border: none;
+    border-radius: 5px;
+}
+
+.formSection .submit {
+    width: fit-content;
+    padding: 8px 40px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    transition: all 0.5s;
+}
+
+.formSection .submit:hover {
+    background-color: white;
+    color: black;
+}
+
+footer p {
+    width: fit-content;
+}
